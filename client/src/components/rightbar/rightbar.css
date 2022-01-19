@@ -1,5 +1,5 @@
 .rightbar {
-  flex: 3;
+  flex: 3.5;
   height: calc(100vh - 60px);
   overflow-y: scroll;
   position: sticky;
@@ -17,12 +17,13 @@
 }
 
 .rightbarWrapper {
-  padding: 20px;
+  padding: 10px;
 }
 
 .birthdayContainer {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .birthdayImg {
@@ -33,17 +34,63 @@
 
 .birthdayText {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 12px;
+  margin: auto;
+  padding: 10px;
+  /* display: flex;
+  align-items: center; */
+  height: 40px;
 }
 
-.rightbarAd {
-  width: 100%;
+.rightbarAdWapper {
+  padding: 5px 0;
+  border-bottom: 1px solid lightgray;
+}
+.rightbarAdTitle {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rightbarAdWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.rightbarAdImg {
+  width: 40%;
   border-radius: 10px;
-  margin: 30px 0;
+  margin-right: 10px;
+  /* margin: 15px 0; */
+}
+
+.rightbarAdTextWrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+}
+.rightbarAdText {
+  font-weight: 500;
+  font-size: 12px;
+  margin: auto;
+  height: 40px;
+}
+
+.rightbarAdWww {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.rightbarHr {
+  margin: 10px;
+  color: lightgray;
 }
 
 .rightbarTitle {
-  margin-bottom: 20px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .rightbarFriendList {
@@ -51,12 +98,12 @@
   margin: 0;
   list-style: none;
 }
-
+/* 
 .rightbarTitle {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
-}
+} */
 
 .rightbarInfo {
   margin-bottom: 30px;

@@ -47,14 +47,39 @@ export default function Rightbar({ user }) {
   const HomeRightbar = () => {
     return (
       <>
-        <div className="birthdayContainer">
+        {/* <div className="birthdayContainer">
           <img className="birthdayImg" src="assets/gift.png" alt="" />
           <span className="birthdayText">
             <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
           </span>
+        </div> */}
+        <div className="rightbarAdWapper">
+          <h4 className="rightbarAdTitle">Sponsored</h4>
+          <div className="rightbarAdWrapper">
+            <img className="rightbarAdImg" src="assets/ad.png" alt="Ad1" />
+            <div className="rightbarAdTextWrapper">
+              <span className="rightbarAdText">
+                Lorem ipsum dolor sit amet consectetur
+              </span>
+              <span className="rightbarAdWww">www.yoursite.com</span>
+            </div>
+          </div>
+          <div className="rightbarAdWrapper">
+            <img
+              className="rightbarAdImg"
+              src="assets/ad2.png"
+              alt="Ad placeholder"
+            />
+            <div className="rightbarAdTextWrapper">
+              <span className="rightbarAdText">
+                Lorem ipsum dolor sit amet consectetur
+              </span>
+              <span className="rightbarAdWww">www.yoursite.com</span>
+            </div>
+          </div>
         </div>
-        <img className="rightbarAd" src="assets/ad.png" alt="" />
-        <h4 className="rightbarTitle">Online Friends</h4>
+
+        <h4 className="rightbarTitle">Contacts</h4>
         <ul className="rightbarFriendList">
           {Users.map((u) => (
             <Online key={u.id} user={u} />
