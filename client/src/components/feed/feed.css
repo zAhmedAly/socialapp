@@ -1,0 +1,22 @@
+.feed {
+  flex: 7;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  top: 60px;
+  padding: 0 50px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+
+.feedWrapper {
+  padding: 20px 50px;
+  background-color: #ebedf0;
+}

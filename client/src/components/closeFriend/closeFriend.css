@@ -1,0 +1,36 @@
+.sidebarFriend {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  height: 40px;
+}
+
+.sidebarFriend:hover {
+  background-color: #dadde1;
+  border-radius: 10px;
+}
+
+.sidebarFriendImgWarpper {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.sidebarFriendImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin-right: 15px; */
+  /* border: 1px solid lightgray; */
+}
+
+.sidebarFriendName {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
