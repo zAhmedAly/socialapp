@@ -5,7 +5,7 @@
   position: sticky;
   top: 60px;
   background-color: #ebedf0;
-  /* background-color: green; */
+  /* background-color: greenyellow; */
 }
 
 ::-webkit-scrollbar {
@@ -23,11 +23,11 @@
 }
 
 .sidebarList {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   margin: 0;
   list-style: none;
   overflow: hidden;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 
 .sidebarListItem {
@@ -49,19 +49,21 @@
 
 .sidebarListItemText {
   margin-left: 10px;
-  font-size: 13px;
-  font-weight: 500;
   display: flex;
   align-items: center;
   height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: inherit;
 }
 .sidebarButton {
   width: 150px;
   border: none;
   padding: 10px;
   border-radius: 5px;
-  font-weight: 500;
-  margin-top: 10px;
+  font-weight: 600;
+  margin: 10px 0;
   background-color: #dadde1;
 }
 
@@ -73,7 +75,10 @@
 .sidebarFriendList {
   padding: 0;
   margin: 0;
+  margin-top: 10px;
+  padding-top: 20px;
   list-style: none;
   overflow: hidden;
+  border-top: 1px solid lightgray;
   /* background-color: lightblue; */
 }

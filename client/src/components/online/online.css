@@ -1,32 +1,52 @@
 .rightbarFriend {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .rightbarProfileImgContainer {
-    margin-right: 10px;
-    position: relative;
-  }
-  
-  .rightbarProfileImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .rightbarOnline{
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: limegreen;
-      position: absolute;
-      top: -2px;
-      right: 0;
-      border: 2px solid white;
-  }
-  
-  .rightbarUsername{
-      font-weight: 500;
-  }
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  height: 40px;
+}
+
+.rightbarFriend:hover {
+  background-color: #dadde1;
+  border-radius: 10px;
+}
+
+.rightbarProfileImgContainer {
+  /* margin-right: 10px; */
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #1877f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightbarProfileImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid lightgray;
+}
+
+.rightbarOnline {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  border: 2px solid white;
+}
+
+.rightbarUsername {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+}

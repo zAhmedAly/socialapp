@@ -20,7 +20,7 @@ export default function Sidebar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">
             <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Feed</span>
+            <span className="sidebarListItemText">Ahmed Aly</span>
           </li>
           <li className="sidebarListItem">
             {/* <GroupRounded className="sidebarIcon" /> */}
@@ -113,7 +113,6 @@ export default function Sidebar() {
           </li>
         </ul>
         <button className="sidebarButton">Show More</button>
-        <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
           {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />

@@ -2,4 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+  /* letter-spacing: 0.3px; */
+  /* line-height: 1.6; */
+  /* line-height: 3; */
 }
