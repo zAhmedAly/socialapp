@@ -4,6 +4,8 @@
   overflow-y: scroll;
   position: sticky;
   background-color: #ebedf0;
+  background-color: lightpink;
+
   /* background-color: lightpink; */
   box-sizing: border-box;
 }

@@ -3,7 +3,7 @@
   height: calc(100vh - 60px);
   overflow-y: scroll;
   top: 60px;
-  /* padding: 0 50px; */
+  background-color: #ebedf0;
   background-color: lightblue;
   box-sizing: border-box;
 }
@@ -19,6 +19,5 @@
 }
 
 .feedWrapper {
-  padding: 20px 50px;
-  background-color: #ebedf0;
+  /* padding: 20px 150px; */
 }

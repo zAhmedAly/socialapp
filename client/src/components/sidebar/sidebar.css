@@ -5,7 +5,7 @@
   position: sticky;
   top: 60px;
   background-color: #ebedf0;
-  /* background-color: greenyellow; */
+  background-color: greenyellow;
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .sidebarWrapper {
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .sidebarList {
