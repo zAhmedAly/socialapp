@@ -4,6 +4,8 @@
   overflow-y: scroll;
   position: sticky;
   background-color: #ebedf0;
+  /* background-color: lightpink; */
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +19,7 @@
 }
 
 .rightbarWrapper {
-  padding: 10px;
+  padding: 20px 20px;
 }
 
 .birthdayContainer {

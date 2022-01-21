@@ -3,7 +3,9 @@
   height: calc(100vh - 60px);
   overflow-y: scroll;
   top: 60px;
-  padding: 0 50px;
+  /* padding: 0 50px; */
+  background-color: lightblue;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {

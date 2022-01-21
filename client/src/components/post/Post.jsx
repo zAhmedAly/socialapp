@@ -5,6 +5,7 @@ import axios from "axios";
 import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import { FaEllipsisH } from "react-icons/fa";
 
 export default function Post({ post }) {
   const [like, setLike] = useState(post.likes.length);
@@ -54,7 +55,8 @@ export default function Post({ post }) {
             </div>
           </div>
           <div className="postTopRight">
-            <MoreHoriz />
+            {/* <MoreHoriz /> */}
+            <FaEllipsisH />
           </div>
         </div>
         <div className="postCenter">
