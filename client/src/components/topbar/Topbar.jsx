@@ -116,7 +116,7 @@ export default function Topbar() {
               alt="Chat"
             /> */}
               <FaFacebookMessenger className="topbarIconItemIcon" />
-              <span className="topbarIconBadge">2</span>
+              <span className="topbarIconBadge">5</span>
             </div>
             <div className="topbarIconItem">
               {/* <NotificationsActiveRounded className="topbarIconItemIcon" /> */}
@@ -127,7 +127,7 @@ export default function Topbar() {
             /> */}
               <FaBell className="topbarIconItemIcon" />
 
-              <span className="topbarIconBadge">5</span>
+              <span className="topbarIconBadge">12</span>
             </div>
             <div className="topbarIconItem">
               {/* <NotificationsActiveRounded className="topbarIconItemIcon" /> */}

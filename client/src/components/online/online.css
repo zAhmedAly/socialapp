@@ -6,15 +6,16 @@
 }
 
 .rightbarFriend:hover {
-  background-color: #dadde1;
+  /* background-color: #dadde1; */
+  background-color: #ebedf0;
   border-radius: 10px;
 }
 
 .rightbarProfileImgContainer {
   /* margin-right: 10px; */
   position: relative;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: white;
   border-radius: 50%;
@@ -25,8 +26,8 @@
 }
 
 .rightbarProfileImg {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid lightgray;
@@ -45,8 +46,8 @@
 
 .rightbarUsername {
   margin-left: 10px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-size: 11px;
+  font-weight: 600;
+  /* letter-spacing: 0.5px; */
   font-family: inherit;
 }

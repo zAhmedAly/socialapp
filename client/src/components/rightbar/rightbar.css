@@ -1,10 +1,10 @@
 .rightbar {
-  flex: 3.5;
+  flex: 25%;
   height: calc(100vh - 60px);
   overflow-y: scroll;
   position: sticky;
-  background-color: #ebedf0;
-  background-color: lightpink;
+  /* background-color: #ebedf0; */
+  background-color: #f5f6f7;
 
   /* background-color: lightpink; */
   box-sizing: border-box;
@@ -53,7 +53,7 @@
 .rightbarAdTitle {
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(110, 110, 110);
   letter-spacing: 0.5px;
 }
@@ -63,8 +63,14 @@
   align-items: center;
   margin-bottom: 10px;
 }
+
+.rightbarAdWrapper:hover {
+  background-color: #ebedf0;
+  border-radius: 10px;
+}
 .rightbarAdImg {
   width: 40%;
+  /* height: 50%; */
   border-radius: 10px;
   margin-right: 10px;
   /* margin: 15px 0; */
@@ -77,8 +83,8 @@
   /* justify-content: flex-start; */
 }
 .rightbarAdText {
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 11px;
   margin: auto;
   height: 40px;
 }
@@ -96,7 +102,7 @@
 .rightbarTitle {
   margin: 10px 0;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(110, 110, 110);
   letter-spacing: 0.5px;
 }

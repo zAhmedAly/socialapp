@@ -1,11 +1,12 @@
 .feed {
-  flex: 6.5;
+  flex: 50%;
   height: calc(100vh - 60px);
   overflow-y: scroll;
   top: 60px;
-  background-color: #ebedf0;
-  background-color: lightblue;
+  /* background-color: #ebedf0; */
+  background-color: #f5f6f7;
   box-sizing: border-box;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -19,5 +20,5 @@
 }
 
 .feedWrapper {
-  /* padding: 20px 150px; */
+  padding: 20px 50px;
 }
