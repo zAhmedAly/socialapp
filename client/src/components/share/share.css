@@ -68,12 +68,12 @@
 
 .shareIcon {
   font-size: 18px;
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .shareOptionText {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .shareButton {
@@ -81,8 +81,8 @@
   padding: 7px;
   border-radius: 5px;
   background-color: green;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   margin: 0 10px;
   cursor: pointer;
   color: white;

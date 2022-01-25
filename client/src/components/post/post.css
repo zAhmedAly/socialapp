@@ -41,15 +41,15 @@
   margin-left: 10px;
 }
 .postUsername {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  /* margin: 0 10px; */
+  margin-bottom: 5px;
 }
 
 .postDate {
-  font-size: 10px;
-  font-weight: 600;
-  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(65, 64, 64, 0.9);
 }
 
 .postTopRight {
@@ -62,7 +62,8 @@
 
 .postTopRight:hover {
   border-radius: 50%;
-  background-color: #ebedf0;
+  /* background-color: #ebedf0; */
+  background-color: #e6eaee;
 }
 .postCenter {
   margin: 20px 0;

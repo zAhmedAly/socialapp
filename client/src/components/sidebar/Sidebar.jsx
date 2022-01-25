@@ -1,17 +1,35 @@
 import "./sidebar.css";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 import { RssFeed } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
+  const { user } = useContext(AuthContext);
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <ul className="sidebarList">
-          <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Ahmed Aly</span>
-          </li>
+          <Link to={`/profile/${user.username}`}>
+            <li className="sidebarListItem">
+              {/* <RssFeed className="sidebarIcon" /> */}
+              <img
+                src={
+                  user.profilePicture
+                    ? PF + user.profilePicture
+                    : PF + "person/noAvatar.png"
+                }
+                alt=""
+                className="sidebarIcon"
+              />
+              <span className="sidebarListItemText">Ahmed Aly</span>
+            </li>
+          </Link>
+
           <li className="sidebarListItem">
             {/* <GroupRounded className="sidebarIcon" /> */}
             <img

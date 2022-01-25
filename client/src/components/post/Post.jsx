@@ -61,9 +61,7 @@ export default function Post({ post }) {
               <span className="postDate">
                 {a.diff(moment(post.createdAt), "days") < 1
                   ? `${moment(post.createdAt).toNow(true)} ago`
-                  : `${moment(post.createdAt).format(
-                      "dddd, MMM DD, YYYY @h:mm a"
-                    )}`}
+                  : `${moment(post.createdAt).format("MMMM DD @ h:mm A")}`}
               </span>
             </div>
           </div>

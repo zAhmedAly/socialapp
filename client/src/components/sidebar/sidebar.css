@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
@@ -20,7 +20,7 @@
 }
 
 .sidebarWrapper {
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 
 .sidebarList {
@@ -57,10 +57,11 @@
   display: flex;
   align-items: center;
   height: 24px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   /* letter-spacing: 0.5px; */
   font-family: inherit;
+  text-decoration: none;
 }
 .sidebarButton {
   width: 150px;
