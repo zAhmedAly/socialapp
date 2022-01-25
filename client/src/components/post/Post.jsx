@@ -1,8 +1,8 @@
 import "./post.css";
-import { MoreHoriz, MoreVert } from "@material-ui/icons";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import { format } from "timeago.js";
+import moment from "moment";
+
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { FaEllipsisH } from "react-icons/fa";
@@ -13,6 +13,9 @@ export default function Post({ post }) {
   const [user, setUser] = useState({});
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const { user: currentUser } = useContext(AuthContext);
+
+  const currentDate = Date.now();
+  const a = moment(currentDate);
 
   useEffect(() => {
     setIsLiked(post.likes.includes(currentUser._id));
@@ -51,7 +54,17 @@ export default function Post({ post }) {
             </Link>
             <div className="postInfo">
               <span className="postUsername">{user.username}</span>
-              <span className="postDate">{format(post.createdAt)}</span>
+              {/* <span className="postDate">{format(post.createdAt)}</span> */}
+              {/* <span className="postDate">
+                {moment(post.createdAt).toNow(true)}
+              </span> */}
+              <span className="postDate">
+                {a.diff(moment(post.createdAt), "days") < 1
+                  ? `${moment(post.createdAt).toNow(true)} ago`
+                  : `${moment(post.createdAt).format(
+                      "dddd, MMM DD, YYYY @h:mm a"
+                    )}`}
+              </span>
             </div>
           </div>
           <div className="postTopRight">

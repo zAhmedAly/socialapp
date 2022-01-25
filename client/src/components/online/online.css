@@ -7,8 +7,10 @@
 
 .rightbarFriend:hover {
   /* background-color: #dadde1; */
-  background-color: #ebedf0;
+  background-color: #e6eaee;
   border-radius: 10px;
+  width: 90%;
+  cursor: pointer;
 }
 
 .rightbarProfileImgContainer {

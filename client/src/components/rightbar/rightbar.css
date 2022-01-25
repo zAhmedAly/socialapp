@@ -1,12 +1,11 @@
 .rightbar {
   flex: 25%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 50px);
   overflow-y: scroll;
   position: sticky;
   /* background-color: #ebedf0; */
   background-color: #f5f6f7;
-
-  /* background-color: lightpink; */
+  top: 50px;
   box-sizing: border-box;
 }
 
@@ -65,7 +64,7 @@
 }
 
 .rightbarAdWrapper:hover {
-  background-color: #ebedf0;
+  background-color: #e6eaee;
   border-radius: 10px;
 }
 .rightbarAdImg {

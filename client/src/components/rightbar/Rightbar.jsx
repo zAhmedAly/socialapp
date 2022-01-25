@@ -85,6 +85,11 @@ export default function Rightbar({ user }) {
             <Online key={u.id} user={u} />
           ))}
         </ul>
+        <ul className="rightbarFriendList">
+          {Users.map((u) => (
+            <Online key={u.id} user={u} />
+          ))}
+        </ul>
       </>
     );
   };
