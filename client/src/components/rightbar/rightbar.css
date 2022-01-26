@@ -20,7 +20,7 @@
 }
 
 .rightbarWrapper {
-  padding: 10px 30px;
+  padding: 20px 20px;
 }
 
 .birthdayContainer {
@@ -46,32 +46,35 @@
 }
 
 .rightbarAdWapper {
-  padding: 5px 0;
+  /* padding: 5px 0; */
   border-bottom: 1px solid lightgray;
 }
 .rightbarAdTitle {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  padding: 10px;
   font-weight: 600;
-  font-size: 12px;
-  color: rgba(65, 64, 64, 0.9);
+  font-size: 16px;
+  color: gray;
   /* letter-spacing: 0.5px; */
 }
 
 .rightbarAdWrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  padding: 10px;
 }
 
 .rightbarAdWrapper:hover {
   background-color: #e6eaee;
   border-radius: 10px;
+  cursor: pointer;
 }
 .rightbarAdImg {
   width: 40%;
-  /* height: 50%; */
   border-radius: 10px;
   margin-right: 10px;
+  object-fit: cover;
   /* margin: 15px 0; */
 }
 
@@ -83,7 +86,7 @@
 }
 .rightbarAdText {
   font-weight: 600;
-  font-size: 11px;
+  font-size: 14px;
   margin: auto;
   height: 40px;
 }
@@ -101,8 +104,8 @@
 .rightbarTitle {
   margin: 10px 0;
   font-weight: 600;
-  font-size: 12px;
-  color: rgba(65, 64, 64, 0.9);
+  font-size: 16px;
+  color: gray;
   /* letter-spacing: 0.5px; */
 }
 

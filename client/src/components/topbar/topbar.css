@@ -108,6 +108,8 @@
   /* background-color: #ebedf0; */
   background-color: #f2f3f5;
   /* background-color: #e6eaee; */
+  /* background-color: #dadde1; */
+
   border-radius: 10px;
   height: 35px;
 }
@@ -159,14 +161,13 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #ebedf0;
-  /* background-color: #f5f6f7; */
+  /* background-color: #ebedf0; */
+  background-color: #f5f6f7;
 }
 
 .topbarIconItem:hover {
   background-color: #dadde1;
   /* background-color: #e6eaee; */
-  background-color: #e6eaee;
 }
 
 .topbarIconItemIcon {

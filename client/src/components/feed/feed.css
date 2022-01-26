@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
@@ -20,5 +20,5 @@
 }
 
 .feedWrapper {
-  padding: 20px 50px;
+  padding: 20px 120px;
 }

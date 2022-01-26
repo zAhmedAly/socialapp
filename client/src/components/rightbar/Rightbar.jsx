@@ -56,7 +56,8 @@ export default function Rightbar({ user }) {
         <div className="rightbarAdWapper">
           <h4 className="rightbarAdTitle">Sponsored</h4>
           <div className="rightbarAdWrapper">
-            <img className="rightbarAdImg" src="assets/ad.png" alt="Ad1" />
+            {/* <img className="rightbarAdImg" src="assets/ad.png" alt="Ad1" /> */}
+            <img className="rightbarAdImg" src="assets/ad3.jpg" alt="Ad1" />
             <div className="rightbarAdTextWrapper">
               <span className="rightbarAdText">
                 Lorem ipsum dolor sit amet consectetur
@@ -67,7 +68,7 @@ export default function Rightbar({ user }) {
           <div className="rightbarAdWrapper">
             <img
               className="rightbarAdImg"
-              src="assets/ad2.png"
+              src="assets/ad4.jpg"
               alt="Ad placeholder"
             />
             <div className="rightbarAdTextWrapper">

@@ -7,23 +7,23 @@ export const Users = [
   {
     id: 2,
     profilePicture: "person/6.jpeg",
-    username: "Shirley Beauchamp",
+    username: "Reham Kassem",
   },
 
   {
     id: 3,
     profilePicture: "person/3.jpeg",
-    username: "Alex Durden",
+    username: "Ehab Eissa Ali",
   },
   {
     id: 4,
     profilePicture: "person/4.jpeg",
-    username: "Dora Hawks",
+    username: "Menna Aly",
   },
   {
     id: 5,
     profilePicture: "person/5.jpeg",
-    username: "Thomas Holden",
+    username: "Sara Aly",
   },
   {
     id: 6,

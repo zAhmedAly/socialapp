@@ -14,7 +14,10 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <ul className="sidebarList">
-          <Link to={`/profile/${user.username}`}>
+          <Link
+            to={`/profile/${user.username}`}
+            style={{ textDecoration: "none" }}
+          >
             <li className="sidebarListItem">
               {/* <RssFeed className="sidebarIcon" /> */}
               <img

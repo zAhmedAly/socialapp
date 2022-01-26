@@ -3,6 +3,7 @@
   align-items: center;
   padding: 10px 5px;
   height: 40px;
+  margin-bottom: 10px;
 }
 
 .rightbarFriend:hover {
@@ -48,8 +49,8 @@
 
 .rightbarUsername {
   margin-left: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  /* letter-spacing: 0.5px; */
+  letter-spacing: 0.5px;
   font-family: inherit;
 }
