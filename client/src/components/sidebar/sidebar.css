@@ -1,9 +1,9 @@
 .sidebar {
   flex: 25%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   overflow-y: scroll;
   position: sticky;
-  top: 50px;
+  top: 60px;
   /* background-color: #ebedf0; */
   background-color: #f5f6f7;
   box-sizing: border-box;

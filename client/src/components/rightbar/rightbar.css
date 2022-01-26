@@ -1,11 +1,11 @@
 .rightbar {
   flex: 25%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   overflow-y: scroll;
   position: sticky;
   /* background-color: #ebedf0; */
   background-color: #f5f6f7;
-  top: 50px;
+  top: 60px;
   box-sizing: border-box;
 }
 

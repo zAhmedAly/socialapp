@@ -1,5 +1,5 @@
 .topbarContainer {
-  height: 45px;
+  height: 60px;
   width: 100%;
   /* background-color: #1877f2; */
   display: flex;
@@ -28,8 +28,8 @@
 
 .logoIcon {
   /* font-size: 40px !important; */
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   margin-left: 10px;
   margin-right: 5px;
   color: #1877f2 !important;
@@ -45,7 +45,7 @@
 
 .searchbar {
   width: 70%;
-  height: 35px;
+  height: 45px;
   /* background-color: #ebedf0; */
   background-color: #f2f3f5;
   border-radius: 30px;
@@ -90,8 +90,8 @@
 }
 
 .menuItem {
-  width: 15%;
-  height: 35px;
+  width: 18%;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,8 +99,8 @@
 }
 
 .menuItemIcon {
-  width: 20px !important;
-  height: 25px !important;
+  width: 25px !important;
+  height: 30px !important;
   object-fit: cover;
 }
 
@@ -111,14 +111,14 @@
   /* background-color: #dadde1; */
 
   border-radius: 10px;
-  height: 35px;
+  height: 45px;
 }
 
 .menuItem.active {
-  border-bottom: 2px solid #1877f2;
+  border-bottom: 3px solid #1877f2;
   border-radius: 10px 10px 0 0;
   /* color: #1877f2 !important; */
-  height: 35px;
+  height: 45px;
 }
 
 .topbarRight {
@@ -158,8 +158,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   /* background-color: #ebedf0; */
   background-color: #f5f6f7;
@@ -173,8 +173,8 @@
 .topbarIconItemIcon {
   /* color: #1877f2 !important; */
   color: black;
-  width: 16px !important;
-  height: 16px !important;
+  width: 18px !important;
+  height: 18px !important;
 }
 
 .topbarIconBadge {
@@ -184,8 +184,8 @@
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: -3px;
-  right: -3px;
+  top: 0px;
+  right: 0px;
   display: flex;
   align-items: center;
   justify-content: center;

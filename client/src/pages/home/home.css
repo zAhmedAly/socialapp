@@ -4,3 +4,16 @@
   background-color: #ebedf0;
   flex-wrap: wrap;
 }
+
+.homeCenter {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  top: 60px;
+  /* background-color: #ebedf0; */
+  background-color: #f5f6f7;
+  box-sizing: border-box;
+  width: 100%;
+}
