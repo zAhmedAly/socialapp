@@ -1,7 +1,6 @@
 import "./sidebar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import { RssFeed } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
 import { Link } from "react-router-dom";

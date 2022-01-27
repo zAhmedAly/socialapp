@@ -22,7 +22,6 @@ export default function Feed({ username }) {
       );
     };
     fetchPosts();
-    console.log(posts);
   }, [username, user._id]);
 
   return (
