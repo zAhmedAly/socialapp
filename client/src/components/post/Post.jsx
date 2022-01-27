@@ -17,6 +17,8 @@ export default function Post({ post }) {
   const currentDate = Date.now();
   const a = moment(currentDate);
 
+  console.log(post.img);
+
   useEffect(() => {
     setIsLiked(post.likes.includes(currentUser._id));
   }, [currentUser._id, post.likes]);
