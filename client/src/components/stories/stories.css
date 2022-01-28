@@ -1,36 +1,65 @@
 .stories {
-  max-width: 100%;
-  /* border-radius: 10px;
+  /* max-width: 100%;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  background-color: white; */
+  background-color: white;
   height: 220px;
   margin-bottom: 10px;
-  display: block;
+  display: block; */
+  padding: 30px 10px 20px;
 }
 
 .storiesWrapper {
-  padding-top: 8px;
+  /* padding-top: 8px;
   padding-bottom: 24px;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   height: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; */
+  position: relative;
   overflow: hidden;
+}
+
+.storyList {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  height: 200px;
+  width: max-content;
+  transform: translateX(0);
+  /* transition: all 1s ease-in-out; */
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .story {
   /* background-color: white; */
-  width: 16%;
+  width: 12%;
   border-radius: 10px;
-  /* border: 1px solid lightgray; */
+  border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   height: 100%;
   position: relative;
+  margin-right: 11px;
+}
+
+.story:hover {
+  /* transform: scale(1.1); */
+  /* margin: 0 10px; */
+  opacity: 0.7;
 }
 
 .storyImg {
