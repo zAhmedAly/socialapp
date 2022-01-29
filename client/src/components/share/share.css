@@ -55,14 +55,17 @@
 
 .shareOptions {
   display: flex;
-  margin-left: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin-left: 20px; */
   flex-wrap: wrap;
+  flex: 10;
 }
 
 .shareOption {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  /* margin-right: 20px; */
   cursor: pointer;
 }
 
