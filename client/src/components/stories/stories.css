@@ -48,13 +48,14 @@
   color: white;
   opacity: 0.5;
   cursor: pointer;
+  z-index: 999;
 }
 
-.arrow.right {
+.right {
   right: 0;
 }
 
-.arrow.left {
+.left {
   left: 0;
 }
 
