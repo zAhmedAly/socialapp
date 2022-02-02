@@ -1,23 +1,8 @@
 .stories {
-  /* max-width: 100%;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  background-color: white;
-  height: 220px;
-  margin-bottom: 10px;
-  display: block; */
   padding: 0 0 30px 0;
 }
 
 .storiesWrapper {
-  /* padding-top: 8px;
-  padding-bottom: 24px;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  height: 100%;
-  flex-wrap: nowrap; */
   position: relative;
   overflow: hidden;
 }
@@ -26,14 +11,10 @@
   display: flex;
   align-items: center;
   height: 190px;
-
-  /* justify-content: space-between; */
-  width: max-content;
+  /* width: max-content; */
   transform: translateX(0px);
   transition: all 1s ease;
-
-  /* transform: translateX(0); */
-  /* transition: all 1s ease-in-out; */
+  border-radius: 10px;
 }
 
 .arrow {
@@ -67,18 +48,18 @@
 
 .story {
   /* background-color: white; */
-  width: 107px;
-  border-radius: 10px;
+  /* width: 107px; */
+  /* border-radius: 10px; */
   /* border: 1px solid black; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100%; */
   position: relative;
   margin-right: 7px;
-  overflow: hidden;
-  cursor: pointer;
+  /* overflow: hidden;
+  cursor: pointer; */
 
   /* transition: all 1.2s ease-in-out; */
 
@@ -95,30 +76,31 @@
 }
 
 .storyImg {
-  width: 100%;
-  height: 100%;
+  width: 107px;
+  height: 190px;
   object-fit: cover;
   border-radius: 10px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  transition: all 1s ease-in-out;
 }
 
 .storyTextWrapper {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  /* opacity: 0.6; */
-  /* background-color: rgba(0, 0, 0, 0.6); */
+  width: 107px;
+  height: 190px;
   background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   display: flex;
   align-items: flex-end;
   justify-content: center;
   border-radius: 10px;
+  top: 0;
+  left: 0;
 }
 .storyText {
   color: white;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
 }
