@@ -23,16 +23,16 @@ const Stories = () => {
 
     console.log("slideNumber >>> ", slideNumber);
 
-    console.log("IF Cond >>> ", itemNumber - (6 + slideNumber));
+    console.log("IF Cond >>> ", itemNumber - (7 + slideNumber));
 
     console.log(
       "expression >>> ",
       listRef.current.computedStyleMap().get("transform")[0].x.value
     );
 
-    if (itemNumber - (6 + slideNumber) >= 0) {
+    if (itemNumber - (7 + slideNumber) >= 0) {
       listRef.current.style.transform = `translateX(${
-        storyList.computedStyleMap().get("transform")[0].x.value - 115
+        storyList.computedStyleMap().get("transform")[0].x.value - 113
       }px)`;
     } else {
       listRef.current.style.transform = "translateX(0)";
