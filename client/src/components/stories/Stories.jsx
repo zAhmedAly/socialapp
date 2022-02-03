@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./stories.css";
@@ -7,6 +8,18 @@ const Stories = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
   const listRef = useRef();
+  const storyWidthRef = useRef();
+
+  useEffect(() => {
+    console.log("listRef width", listRef.current.offsetWidth);
+    const ratio = Math.floor(listRef.current.offsetWidth / 107);
+    storyWidthRef.current.value = Math.floor(
+      listRef.current.offsetWidth / ratio
+    );
+    console.log("offsetWidth >>> ", listRef.current.offsetWidth);
+    console.log("ratio >>> ", ratio);
+    console.log("storyWidth >>> ", storyWidthRef.current.value);
+  }, []);
 
   const handleClick = (direction) => {
     const arrow = document.querySelector(".arrow");
@@ -16,21 +29,24 @@ const Stories = () => {
     // console.log(storyList);
     console.log("itemNumber >>> ", itemNumber);
 
-    const ratio = Math.floor((window.innerWidth - 349) / 114);
-    // console.log("window.innerWidth >>> ", window.innerWidth);
-    // console.log("ratio >>> ", ratio);
+    const ratio = Math.floor(listRef.current.offsetWidth / 107);
+    const storyWidth = Math.floor(listRef.current.offsetWidth / ratio);
+    console.log("offsetWidth 2 >>> ", listRef.current.offsetWidth);
+    console.log("ratio 2 >>> ", ratio);
+    console.log("storyWidth 2 >>> ", storyWidth);
+
     setSlideNumber(slideNumber + 1);
 
     console.log("slideNumber >>> ", slideNumber);
 
-    console.log("IF Cond >>> ", itemNumber - (6 + slideNumber));
+    console.log("IF Cond >>> ", itemNumber - (6 + slideNumber) + (6 - ratio));
 
     console.log(
       "expression >>> ",
       listRef.current.computedStyleMap().get("transform")[0].x.value
     );
 
-    if (itemNumber - (6 + slideNumber) >= 0) {
+    if (itemNumber - (6 + slideNumber) + (6 - ratio) > 0) {
       listRef.current.style.transform = `translateX(${
         storyList.computedStyleMap().get("transform")[0].x.value - 114
       }px)`;
@@ -66,7 +82,11 @@ const Stories = () => {
           style={{ display: !isMoved && "none" }}
         /> */}
         <div className="storyList" ref={listRef}>
-          <Story pic={2} name={"Create Story"} />
+          <Story
+            pic={2}
+            name={"Create Story"}
+            storyWidth={storyWidthRef.current.value}
+          />
           <Story pic={3} name={"Ehab Eissa Ali"} />
           <Story pic={7} name={"Travis Bennett"} />
           <Story pic={6} name={"Reham Kassem"} />
