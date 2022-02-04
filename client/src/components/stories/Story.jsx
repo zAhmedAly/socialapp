@@ -1,23 +1,19 @@
-import { useEffect, useRef } from "react";
 import "./stories.css";
-const Story = ({ pic, name, storyWidth = 107 }) => {
+const Story = ({ pic, name, storyWidth }) => {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-  const storyImgRef = useRef();
-  const storyTextWrapperRef = useRef();
-
-  useEffect(() => {
-    storyImgRef.style.width = `${storyWidth}`;
-  }, []);
 
   return (
     <div className="story">
       <img
         className="storyImg"
-        ref={storyImgRef}
         src={`${PF}person/${pic}.jpeg`}
         alt="story"
+        style={{ width: `${storyWidth - 6}px` }}
       />
-      <div className="storyTextWrapper">
+      <div
+        className="storyTextWrapper"
+        style={{ width: `${storyWidth - 6}px` }}
+      >
         <span className="storyText">{name}</span>
       </div>
     </div>
