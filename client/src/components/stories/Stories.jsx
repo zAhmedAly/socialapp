@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useRef, useState } from "react";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import { FaChevronRight } from "react-icons/fa";
 
 import "./stories.css";
 import Story from "./Story";
 const Stories = () => {
-  // const [isMoved, setIsMoved] = useState(false);
+  const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
   const [storyWidth, setStoryWidth] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
@@ -50,8 +50,6 @@ const Stories = () => {
     console.log("ratio 2 >>> ", ratio);
     console.log("storyWidth 2 >>> ", storyWidth);
 
-    setSlideNumber(slideNumber + 1);
-
     console.log("slideNumber >>> ", slideNumber);
 
     console.log("IF Cond >>> ", itemNumber - (6 + slideNumber) + (6 - ratio));
@@ -61,14 +59,30 @@ const Stories = () => {
       listRef.current.computedStyleMap().get("transform")[0].x.value
     );
 
-    if (itemNumber - (6 + slideNumber) + (6 - ratio) > 0) {
-      listRef.current.style.transform = `translateX(${
-        storyList.computedStyleMap().get("transform")[0].x.value -
-        `${storyWidth}`
-      }px)`;
+    if (direction === "right") {
+      setSlideNumber(slideNumber + 1);
+
+      if (itemNumber - (6 + slideNumber) + (6 - ratio) > 0) {
+        listRef.current.style.transform = `translateX(${
+          storyList.computedStyleMap().get("transform")[0].x.value -
+          `${storyWidth}`
+        }px)`;
+      } else {
+        listRef.current.style.transform = "translateX(0)";
+        setSlideNumber(0);
+      }
     } else {
-      listRef.current.style.transform = "translateX(0)";
-      setSlideNumber(0);
+      setSlideNumber(slideNumber - 1);
+
+      if (itemNumber - (6 + slideNumber) + (6 - ratio) < 0) {
+        listRef.current.style.transform = `translateX(${
+          storyList.computedStyleMap().get("transform")[0].x.value +
+          `${storyWidth}`
+        }px)`;
+      } else {
+        listRef.current.style.transform = "translateX(0)";
+        setSlideNumber(0);
+      }
     }
 
     // setIsMoved(true);
@@ -96,11 +110,11 @@ const Stories = () => {
         <div>{`Window height = ${height}`}</div>
       </div>
       <div className="storiesWrapper">
-        {/* <FaChevronLeft
+        <FaChevronLeft
           className="arrow left"
           onClick={() => handleClick("left")}
-          style={{ display: !isMoved && "none" }}
-        /> */}
+          // style={{ display: !isMoved && "none" }}
+        />
         <div className="storyList" ref={listRef}>
           <Story pic={2} name={"Create Story"} storyWidth={storyWidth} />
           <Story pic={3} name={"Ehab Eissa Ali"} storyWidth={storyWidth} />
