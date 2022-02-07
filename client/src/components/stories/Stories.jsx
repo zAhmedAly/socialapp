@@ -22,12 +22,9 @@ const Stories = () => {
 
   useEffect(() => {
     window.addEventListener("resize", updateWidthAndHeight);
-    console.log("listRef width", listRef.current.offsetWidth);
+    // console.log("listRef width", listRef.current.offsetWidth);
     const ratio = Math.floor(listRef.current.offsetWidth / 114);
     setStoryWidth(Math.floor(listRef.current.offsetWidth / ratio));
-    // console.log("offsetWidth >>> ", listRef.current.offsetWidth);
-    // console.log("ratio >>> ", ratio);
-    // console.log("storyWidth >>> ", storyWidth);
     return () => window.removeEventListener("resize", updateWidthAndHeight);
   }, [width]);
 
@@ -53,31 +50,45 @@ const Stories = () => {
 
     if (direction === "right" && slideNumber <= itemNumber - ratio) {
       // if (itemNumber - (6 + slideNumber) + (6 - ratio) >= 0) {
+      console.log("RIGHT Clicked >>>> Slide# = ", slideNumber);
+
+      console.log(
+        "RIGHT UE => ",
+        storyList.computedStyleMap().get("transform")[0].x.value - storyWidth
+      );
+
       listRef.current.style.transform = `translateX(${
         storyList.computedStyleMap().get("transform")[0].x.value -
         `${storyWidth}`
       }px)`;
+    } else {
+      listRef.current.style.transform = "translateX(0)";
+      setSlideNumber(0);
     }
-    // } else {
-    //   listRef.current.style.transform = "translateX(0)";
-    //   setSlideNumber(0);
-    // }
     // } else {
     //   if (itemNumber - (6 + slideNumber) + (6 - ratio) < 0) {
     if (direction === "left" && slideNumber > 0) {
+      console.log("LEFT Clicked <<<< Slide# = ", slideNumber);
+      console.log(
+        "LEFT UE => ",
+        storyList.computedStyleMap().get("transform")[0].x.value + storyWidth
+      );
+
       listRef.current.style.transform = `translateX(${
         storyList.computedStyleMap().get("transform")[0].x.value +
         `${storyWidth}`
       }px)`;
     }
-    // } else {
+    // else {
     //   listRef.current.style.transform = "translateX(0)";
     //   setSlideNumber(0);
     // }
 
-    console.log("========== End ==========");
+    console.log(
+      "========== End useEffect ======================================================"
+    );
     // eslint-disable-next-line
-  }, [direction, slideNumber]);
+  }, [slideNumber]);
 
   const handleClick = (direction) => {
     const storyList = document.querySelector(".storyList");
@@ -90,10 +101,18 @@ const Stories = () => {
       SetDirection("right");
       setSlideNumber(slideNumber + 1);
     }
+    // else {
+    //   setSlideNumber(0);
+    // }
     if (direction === "left" && slideNumber > 0) {
       SetDirection("left");
       setSlideNumber(slideNumber - 1);
     }
+
+    console.log(
+      `CLICK direction >>> ${direction} === slideNumber >>> ${slideNumber}`
+    );
+    console.log("========== End clickHandle ==========");
 
     // setIsMoved(true);
     // console.log(Math.floor(window.innerWidth / 114));
@@ -111,9 +130,6 @@ const Stories = () => {
     //   console.log("slideNumber RIGHT AFTER >>>> ", slideNumber);
     //   listRef.current.style.transform = `translateX(${-115 * slideNumber}px)`;
     // }
-    console.log(
-      `CLICK direction >>> ${direction} === slideNumber >>> ${slideNumber}`
-    );
   };
 
   return (
@@ -134,9 +150,9 @@ const Stories = () => {
           <Story pic={7} name={"Travis Bennett"} storyWidth={storyWidth} />
           <Story pic={6} name={"Reham Kassem"} storyWidth={storyWidth} />
           <Story pic={9} name={"Gary Duty"} storyWidth={storyWidth} />
-          <Story pic={2} name={"Create Story"} storyWidth={storyWidth} />
-          <Story pic={3} name={"Ehab Eissa Ali"} storyWidth={storyWidth} />
-          <Story pic={7} name={"Travis Bennett"} storyWidth={storyWidth} />
+          <Story pic={4} name={"Menna Aly"} storyWidth={storyWidth} />
+          <Story pic={1} name={"Ehab Eissa Ali"} storyWidth={storyWidth} />
+          <Story pic={7} name={"John Doe"} storyWidth={storyWidth} />
           <Story pic={6} name={"Reham Kassem"} storyWidth={storyWidth} />
           <Story pic={9} name={"Gary Duty"} storyWidth={storyWidth} />
         </div>
