@@ -11,6 +11,7 @@ const Stories = () => {
   const [storyWidth, setStoryWidth] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
+  const [direction, SetDirection] = useState("");
 
   const listRef = useRef();
 
@@ -18,12 +19,6 @@ const Stories = () => {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
   };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", updateWidthAndHeight);
-
-  //   return () => window.removeEventListener("resize", updateWidthAndHeight);
-  // });
 
   useEffect(() => {
     window.addEventListener("resize", updateWidthAndHeight);
@@ -36,53 +31,68 @@ const Stories = () => {
     return () => window.removeEventListener("resize", updateWidthAndHeight);
   }, [width]);
 
-  const handleClick = (direction) => {
-    // const arrow = document.querySelector(".arrow");
+  useEffect(() => {
     const storyList = document.querySelector(".storyList");
     const itemNumber = storyList.querySelectorAll("img").length;
-    // console.log(arrow);
-    // console.log(storyList);
     console.log("itemNumber >>> ", itemNumber);
-
     const ratio = Math.floor(listRef.current.offsetWidth / 114);
     setStoryWidth(Math.floor(listRef.current.offsetWidth / ratio));
     console.log("offsetWidth 2 >>> ", listRef.current.offsetWidth);
     console.log("ratio 2 >>> ", ratio);
     console.log("storyWidth 2 >>> ", storyWidth);
-
-    console.log("slideNumber >>> ", slideNumber);
-
-    console.log("IF Cond >>> ", itemNumber - (6 + slideNumber) + (6 - ratio));
+    console.log(
+      `direction >>> ${direction} === slideNumber >>> ${slideNumber}`
+    );
+    // console.log("IF Cond >>> ", itemNumber - (6 + slideNumber) + (6 - ratio));
+    console.log("IF Cond >>> ", slideNumber <= itemNumber - ratio);
 
     console.log(
       "expression >>> ",
       listRef.current.computedStyleMap().get("transform")[0].x.value
     );
 
-    if (direction === "right") {
+    if (direction === "right" && slideNumber <= itemNumber - ratio) {
+      // if (itemNumber - (6 + slideNumber) + (6 - ratio) >= 0) {
+      listRef.current.style.transform = `translateX(${
+        storyList.computedStyleMap().get("transform")[0].x.value -
+        `${storyWidth}`
+      }px)`;
+    }
+    // } else {
+    //   listRef.current.style.transform = "translateX(0)";
+    //   setSlideNumber(0);
+    // }
+    // } else {
+    //   if (itemNumber - (6 + slideNumber) + (6 - ratio) < 0) {
+    if (direction === "left" && slideNumber > 0) {
+      listRef.current.style.transform = `translateX(${
+        storyList.computedStyleMap().get("transform")[0].x.value +
+        `${storyWidth}`
+      }px)`;
+    }
+    // } else {
+    //   listRef.current.style.transform = "translateX(0)";
+    //   setSlideNumber(0);
+    // }
+
+    console.log("========== End ==========");
+    // eslint-disable-next-line
+  }, [direction, slideNumber]);
+
+  const handleClick = (direction) => {
+    const storyList = document.querySelector(".storyList");
+    const itemNumber = storyList.querySelectorAll("img").length;
+    console.log("itemNumber >>> ", itemNumber);
+    const ratio = Math.floor(listRef.current.offsetWidth / 114);
+    setStoryWidth(Math.floor(listRef.current.offsetWidth / ratio));
+
+    if (direction === "right" && slideNumber < itemNumber - ratio) {
+      SetDirection("right");
       setSlideNumber(slideNumber + 1);
-
-      if (itemNumber - (6 + slideNumber) + (6 - ratio) > 0) {
-        listRef.current.style.transform = `translateX(${
-          storyList.computedStyleMap().get("transform")[0].x.value -
-          `${storyWidth}`
-        }px)`;
-      } else {
-        listRef.current.style.transform = "translateX(0)";
-        setSlideNumber(0);
-      }
-    } else {
+    }
+    if (direction === "left" && slideNumber > 0) {
+      SetDirection("left");
       setSlideNumber(slideNumber - 1);
-
-      if (itemNumber - (6 + slideNumber) + (6 - ratio) < 0) {
-        listRef.current.style.transform = `translateX(${
-          storyList.computedStyleMap().get("transform")[0].x.value +
-          `${storyWidth}`
-        }px)`;
-      } else {
-        listRef.current.style.transform = "translateX(0)";
-        setSlideNumber(0);
-      }
     }
 
     // setIsMoved(true);
@@ -101,6 +111,9 @@ const Stories = () => {
     //   console.log("slideNumber RIGHT AFTER >>>> ", slideNumber);
     //   listRef.current.style.transform = `translateX(${-115 * slideNumber}px)`;
     // }
+    console.log(
+      `CLICK direction >>> ${direction} === slideNumber >>> ${slideNumber}`
+    );
   };
 
   return (
