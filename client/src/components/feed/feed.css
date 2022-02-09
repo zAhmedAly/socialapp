@@ -1,5 +1,5 @@
 .feed {
-  flex: 55%;
+  flex: 60%;
   height: calc(100vh - 60px);
   overflow-y: scroll;
   top: 60px;
@@ -20,5 +20,5 @@
 }
 
 .feedWrapper {
-  padding: 20px 65px;
+  padding: 20px 100px;
 }

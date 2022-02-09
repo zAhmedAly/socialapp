@@ -1,15 +1,16 @@
-import "./share.css";
+import "./room.css";
 import {
   PhotoLibraryRounded,
   EmojiEmotionsOutlined,
   Cancel,
   VideocamRounded,
+  VideoCallRounded,
 } from "@material-ui/icons";
 import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 
-export default function Share() {
+export default function Room() {
   const { user } = useContext(AuthContext);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const desc = useRef();
@@ -43,11 +44,24 @@ export default function Share() {
   };
 
   return (
-    <div className="share">
-      <div className="shareWrapper">
-        <div className="shareTop">
-          <img
-            className="shareProfileImg"
+    <div className="room">
+      <div className="roomWrapper">
+        <div className="roomTop">
+          <button className="roomButton" type="submit">
+            <VideoCallRounded
+              className="roomIcon"
+              style={{
+                color: "white",
+                width: "40px",
+                borderRadius: "50%",
+                background:
+                  "linear-gradient(to right bottom, #36EAEF, #6B0AC9)",
+              }}
+            />
+            <span className="roomOptionText">Create room</span>
+          </button>
+          {/* <img
+            className="roomProfileImg"
             src={
               user.profilePicture
                 ? PF + user.profilePicture
@@ -57,26 +71,26 @@ export default function Share() {
           />
           <input
             placeholder={"What's in your mind, " + user.username + "?"}
-            className="shareInput"
+            className="roomInput"
             ref={desc}
-          />
+          /> */}
         </div>
-        <hr className="shareHr" />
-        {file && (
-          <div className="shareImgContainer">
-            <img className="shareImg" src={URL.createObjectURL(file)} alt="" />
-            <Cancel className="shareCancelImg" onClick={() => setFile(null)} />
+        {/* <hr className="roomHr" /> */}
+        {/* {file && (
+          <div className="roomImgContainer">
+            <img className="roomImg" src={URL.createObjectURL(file)} alt="" />
+            <Cancel className="roomCancelImg" onClick={() => setFile(null)} />
           </div>
         )}
-        <form className="shareBottom" onSubmit={submitHandler}>
-          <div className="shareOptions">
-            <div className="shareOption">
-              <VideocamRounded htmlColor="red" className="shareIcon" />
-              <span className="shareOptionText">Live video</span>
+        <form className="roomBottom" onSubmit={submitHandler}>
+          <div className="roomOptions">
+            <div className="roomOption">
+              <VideocamRounded htmlColor="red" className="roomIcon" />
+              <span className="roomOptionText">Live video</span>
             </div>
-            <label htmlFor="file" className="shareOption">
-              <PhotoLibraryRounded htmlColor="green" className="shareIcon" />
-              <span className="shareOptionText">Photo/Video</span>
+            <label htmlFor="file" className="roomOption">
+              <PhotoLibraryRounded htmlColor="green" className="roomIcon" />
+              <span className="roomOptionText">Photo/Video</span>
               <input
                 style={{ display: "none" }}
                 type="file"
@@ -85,23 +99,16 @@ export default function Share() {
                 onChange={(e) => setFile(e.target.files[0])}
               />
             </label>
-            {/* <div className="shareOption">
-              <Label htmlColor="blue" className="shareIcon" />
-              <span className="shareOptionText">Tag</span>
-            </div> */}
-            {/* <div className="shareOption">
-                <Room htmlColor="green" className="shareIcon" />
-                <span className="shareOptionText">Location</span>
-              </div> */}
-            <div className="shareOption">
-              <EmojiEmotionsOutlined htmlColor="gold" className="shareIcon" />
-              <span className="shareOptionText">Feeling/activity</span>
+
+            <div className="roomOption">
+              <EmojiEmotionsOutlined htmlColor="gold" className="roomIcon" />
+              <span className="roomOptionText">Feeling/activity</span>
             </div>
           </div>
-          <button className="shareButton" type="submit">
+          <button className="roomButton" type="submit">
             Share
           </button>
-        </form>
+        </form> */}
       </div>
     </div>
   );

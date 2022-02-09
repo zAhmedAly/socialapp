@@ -5,6 +5,7 @@ import "./feed.css";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
 import Stories from "../stories/Stories";
+import Room from "../room/Room";
 
 export default function Feed({ username }) {
   const [posts, setPosts] = useState([]);
@@ -31,6 +32,9 @@ export default function Feed({ username }) {
           {(!username || username === user.username) && <Stories />}
 
           {(!username || username === user.username) && <Share />}
+
+          {(!username || username === user.username) && <Room />}
+
           {posts.map((p) => (
             <Post key={p._id} post={p} />
           ))}

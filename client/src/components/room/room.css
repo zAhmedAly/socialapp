@@ -1,23 +1,22 @@
-.share {
+.room {
   width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   background-color: white;
-  margin-bottom: 20px;
 }
 
-.shareWrapper {
-  padding: 10px;
+.roomWrapper {
+  padding: 12px 10px;
 }
 
-.shareTop {
+.roomTop {
   display: flex;
   align-items: center;
   overflow: auto;
 }
 
-.shareProfileImg {
+.roomProfileImg {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -26,7 +25,7 @@
   border: 1px solid lightgray;
 }
 
-.shareInput {
+.roomInput {
   border: none;
   width: 90%;
   height: 36px;
@@ -38,23 +37,23 @@
   font-size: 18px;
 }
 
-.shareInput:focus {
+.roomInput:focus {
   outline: none;
 }
 
-.shareHr {
+.roomHr {
   margin: 15px;
   border: 1px solid rgb(233, 233, 233);
 }
 
-.shareBottom {
+.roomBottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.shareOptions {
+.roomOptions {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -63,46 +62,51 @@
   flex: 10;
 }
 
-.shareOption {
+.roomOption {
   display: flex;
   align-items: center;
   /* margin-right: 20px; */
   cursor: pointer;
 }
 
-.shareIcon {
-  font-size: 30px !important;
+.roomIcon {
+  font-size: 28px !important;
   margin-right: 5px;
 }
 
-.shareOptionText {
+.roomOptionText {
   font-size: 13px;
   font-weight: 600;
+  height: 100%;
+  letter-spacing: 1px;
+  color: rgb(92, 116, 223);
 }
 
-.shareButton {
-  border: none;
-  padding: 7px;
-  border-radius: 5px;
-  background-color: green;
-  font-size: 13px;
+.roomButton {
+  border: 1px solid rgb(204, 232, 241);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 12px;
   font-weight: 600;
   margin: 0 10px;
   cursor: pointer;
-  color: white;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.shareImgContainer {
+.roomImgContainer {
   padding: 0 20px 10px 20px;
   position: relative;
 }
 
-.shareImg {
+.roomImg {
   width: 100%;
   object-fit: cover;
 }
 
-.shareCancelImg {
+.roomCancelImg {
   position: absolute;
   top: 0;
   right: 20px;
