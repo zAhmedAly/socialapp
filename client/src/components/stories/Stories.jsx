@@ -59,7 +59,7 @@ const Stories = () => {
       );
     }
     console.log("useEffect slideNumber >>> ", slideNumber);
-  }, [slideNumber]);
+  }, [slideNumber, arrowClicked]);
 
   const handleClick = (direction) => {
     // setIsMoved(true);

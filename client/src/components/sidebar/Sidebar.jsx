@@ -1,13 +1,16 @@
 import "./sidebar.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
 import { Link } from "react-router-dom";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Sidebar() {
   const { user } = useContext(AuthContext);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
+  const [seeMore, setSeeMore] = useState(false);
 
   return (
     <div className="sidebar">
@@ -76,8 +79,20 @@ export default function Sidebar() {
             />
             <span className="sidebarListItemText">Memories</span>
           </li>
-          <li className="sidebarListItem">
-            {/* <Bookmark className="sidebarIcon" /> */}
+          <li
+            className="sidebarListItem"
+            style={{ display: seeMore && "none" }}
+            onClick={() => setSeeMore(!seeMore)}
+          >
+            <div className="seeMoreItem">
+              <FaChevronDown className="seeMoreItemIcon" />
+            </div>
+            <span className="sidebarListItemText">See more</span>
+          </li>
+          <li
+            className="sidebarListItem"
+            style={{ display: !seeMore && "none" }}
+          >
             <img
               src="https://img.icons8.com/color/48/000000/bookmark-ribbon--v1.png"
               className="sidebarIcon"
@@ -85,7 +100,10 @@ export default function Sidebar() {
             />
             <span className="sidebarListItemText">Saved</span>
           </li>
-          <li className="sidebarListItem">
+          <li
+            className="sidebarListItem"
+            style={{ display: !seeMore && "none" }}
+          >
             {/* <HelpOutline className="sidebarIcon" /> */}
             <img
               src="https://img.icons8.com/color/48/000000/questions.png"
@@ -94,7 +112,10 @@ export default function Sidebar() {
             />
             <span className="sidebarListItemText">Questions</span>
           </li>
-          <li className="sidebarListItem">
+          <li
+            className="sidebarListItem"
+            style={{ display: !seeMore && "none" }}
+          >
             {/* <WorkOutline className="sidebarIcon" /> */}
             <img
               src="https://img.icons8.com/color/48/000000/find-matching-job.png"
@@ -103,7 +124,10 @@ export default function Sidebar() {
             />
             <span className="sidebarListItemText">Jobs</span>
           </li>
-          <li className="sidebarListItem">
+          <li
+            className="sidebarListItem"
+            style={{ display: !seeMore && "none" }}
+          >
             {/* <Event className="sidebarIcon" /> */}
             <img
               src="https://img.icons8.com/color/48/000000/event-accepted-tentatively.png"
@@ -112,7 +136,10 @@ export default function Sidebar() {
             />
             <span className="sidebarListItemText">Events</span>
           </li>
-          <li className="sidebarListItem">
+          <li
+            className="sidebarListItem"
+            style={{ display: !seeMore && "none" }}
+          >
             {/* <School className="sidebarIcon" /> */}
             <img
               src="https://img.icons8.com/color/48/000000/graduation-cap.png"
@@ -121,8 +148,18 @@ export default function Sidebar() {
             />
             <span className="sidebarListItemText">Courses</span>
           </li>
+          <li
+            className="sidebarListItem"
+            style={{ display: !seeMore && "none" }}
+            onClick={() => setSeeMore(!seeMore)}
+          >
+            <div className="seeMoreItem">
+              <FaChevronUp className="seeMoreItemIcon" />
+            </div>
+            <span className="sidebarListItemText">See less</span>
+          </li>
         </ul>
-        <button className="sidebarButton">Show More</button>
+        {/* <button className="sidebarButton">Show More</button> */}
         <ul className="sidebarFriendList">
           {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />

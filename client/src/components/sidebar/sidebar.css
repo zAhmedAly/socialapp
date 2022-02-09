@@ -91,3 +91,22 @@
   border-top: 1px solid lightgray;
   /* background-color: lightblue; */
 }
+
+.seeMoreItem {
+  /* margin: 0 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #dedfdf;
+  /* border: 1px solid black; */
+}
+
+.seeMoreItemIcon {
+  /* color: #1877f2 !important; */
+  color: black;
+  width: 12px !important;
+  height: 12px !important;
+}

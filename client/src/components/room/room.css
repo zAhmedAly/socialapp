@@ -17,12 +17,13 @@
 }
 
 .roomProfileImg {
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
-  border: 1px solid lightgray;
+  margin-left: 5px;
+  border: 1px solid gray;
 }
 
 .roomInput {
@@ -80,6 +81,9 @@
   height: 100%;
   letter-spacing: 1px;
   color: rgb(92, 116, 223);
+  height: 45px;
+  display: flex;
+  align-items: center;
 }
 
 .roomButton {
@@ -94,6 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 45px;
 }
 
 .roomImgContainer {

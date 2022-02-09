@@ -1,11 +1,5 @@
 import "./room.css";
-import {
-  PhotoLibraryRounded,
-  EmojiEmotionsOutlined,
-  Cancel,
-  VideocamRounded,
-  VideoCallRounded,
-} from "@material-ui/icons";
+import { VideoCallRounded } from "@material-ui/icons";
 import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
@@ -60,7 +54,7 @@ export default function Room() {
             />
             <span className="roomOptionText">Create room</span>
           </button>
-          {/* <img
+          <img
             className="roomProfileImg"
             src={
               user.profilePicture
@@ -69,7 +63,16 @@ export default function Room() {
             }
             alt=""
           />
-          <input
+          <img
+            className="roomProfileImg"
+            src={
+              user.profilePicture
+                ? PF + user.profilePicture
+                : PF + "person/noAvatar.png"
+            }
+            alt=""
+          />
+          {/* <input
             placeholder={"What's in your mind, " + user.username + "?"}
             className="roomInput"
             ref={desc}
