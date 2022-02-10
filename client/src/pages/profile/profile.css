@@ -9,7 +9,6 @@
   overflow-y: scroll;
   /* position: sticky; */
   top: 60px;
-  /* padding: 0px 340px; */
 }
 
 .profileRightTop {
@@ -22,43 +21,38 @@
   height: 350px;
   position: relative;
   display: flex;
-  justify-content: space-around;
-  padding: 0px 350px;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  margin: auto;
 }
 
 .profileCoverImg {
   height: 350px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 0 0 10px 10px;
-  width: inherit;
+  width: 60%;
   background-color: rgb(0, 0, 0, 0.8);
 }
 
 .profileUserImgWarpper {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 24%;
+  left: 22%;
   right: 0;
-  /* margin: auto; */
   top: 90%;
 }
 .profileUserImg {
-  width: 145px;
-  height: 145px;
+  width: 165px;
+  height: 165px;
   border-radius: 50%;
   object-fit: cover;
-  /* position: absolute;
-  left: 25%;
-  right: 0;
-  margin: auto;
-  top: 90%; */
   border: 1px solid lightgray;
 }
 
@@ -70,7 +64,8 @@
 }
 
 .profileInfoName {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .profileInfoDesc {

@@ -36,6 +36,7 @@ export default function Profile() {
                 }
                 alt=""
               />
+
               <div className="profileUserImgWarpper">
                 <img
                   className="profileUserImg"
@@ -49,7 +50,7 @@ export default function Profile() {
               </div>
             </div>
             <div className="profileInfo">
-              <h4 className="profileInfoName">{user.username}</h4>
+              <span className="profileInfoName">{user.username}</span>
               <span className="profileInfoDesc">{user.desc}</span>
             </div>
           </div>
