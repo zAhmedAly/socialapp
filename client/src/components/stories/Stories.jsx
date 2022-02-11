@@ -22,7 +22,7 @@ const Stories = () => {
   useEffect(() => {
     window.addEventListener("resize", updateWidthAndHeight);
     console.log(">>>> listRef width >>>> ", listRef.current.offsetWidth);
-    const ratio = Math.floor(listRef.current.offsetWidth / 114);
+    const ratio = Math.floor(listRef.current.offsetWidth / 107);
     const tempWidth = Math.floor(listRef.current.offsetWidth / ratio);
     setStoryWidth(tempWidth);
     console.log(
@@ -32,7 +32,7 @@ const Stories = () => {
   }, [width]);
 
   useEffect(() => {
-    const ratio = Math.floor(listRef.current.offsetWidth / 114);
+    const ratio = Math.floor(listRef.current.offsetWidth / 107);
     const storyList = document.querySelector(".storyList");
     console.log("useEffect arrowClicked >>> ", arrowClicked);
     if (arrowClicked === "left" && slideNumber >= 0) {
@@ -64,7 +64,7 @@ const Stories = () => {
   const handleClick = (direction) => {
     // setIsMoved(true);
     // let distance = listRef.current.getBoundingClientRect().x - 50;
-    const ratio = Math.floor(listRef.current.offsetWidth / 114);
+    const ratio = Math.floor(listRef.current.offsetWidth / 107);
     setStoryWidth(Math.floor(listRef.current.offsetWidth / ratio));
 
     if (direction === "left" && slideNumber > 0) {
@@ -97,12 +97,16 @@ const Stories = () => {
           <Story pic={3} name={"Ehab Eissa Ali"} storyWidth={storyWidth} />
           <Story pic={7} name={"Travis Bennett"} storyWidth={storyWidth} />
           <Story pic={6} name={"Reham Kassem"} storyWidth={storyWidth} />
-          <Story pic={9} name={"Gary Duty"} storyWidth={storyWidth} />
+          <Story pic={9} name={"Sarah Smith"} storyWidth={storyWidth} />
           <Story pic={4} name={"Menna Aly"} storyWidth={storyWidth} />
-          <Story pic={1} name={"Ehab Eissa Ali"} storyWidth={storyWidth} />
-          <Story pic={7} name={"John Doe"} storyWidth={storyWidth} />
-          <Story pic={6} name={"Reham Kassem"} storyWidth={storyWidth} />
-          <Story pic={9} name={"Gary Duty"} storyWidth={storyWidth} />
+          <Story pic={5} name={"Sara Aly"} storyWidth={storyWidth} />
+          <Story pic={10} name={"Jane Doe"} storyWidth={storyWidth} />
+          <Story
+            pic={8}
+            name={"Jennifer Emma Watson"}
+            storyWidth={storyWidth}
+          />
+          <Story pic={1} name={"Gary Duty"} storyWidth={storyWidth} />
         </div>
         <FaChevronRight
           className="arrow right"

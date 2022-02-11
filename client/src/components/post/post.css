@@ -21,11 +21,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 36px;
+  height: 40px;
 }
 
 .postProfileImg {
-  width: 36px;
+  width: 40px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid lightgray;
@@ -33,7 +33,7 @@
 }
 
 .postInfo {
-  height: 30px;
+  height: 36px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -43,12 +43,12 @@
 .postUsername {
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .postDate {
   font-size: 12px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: rgba(65, 64, 64, 0.9);
 }
 
@@ -64,6 +64,7 @@
   border-radius: 50%;
   /* background-color: #ebedf0; */
   background-color: #e6eaee;
+  cursor: pointer;
 }
 .postCenter {
   margin: 20px 0;
@@ -99,13 +100,17 @@
 }
 
 .postLikeCounter {
-  font-size: 12px;
+  font-size: 13px;
   color: gray;
 }
 
-.postCommentText {
+.postLikeCounter:hover {
+  border-bottom: 1px solid gray;
   cursor: pointer;
-  font-size: 12px;
+}
+
+.postCommentText {
+  font-size: 13px;
   font-weight: 500;
   color: gray;
 }
@@ -114,4 +119,5 @@
   /* font-size: 11px;
   font-weight: 600; */
   border-bottom: 1px solid gray;
+  cursor: pointer;
 }
