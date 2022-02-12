@@ -95,18 +95,18 @@ const Stories = () => {
         <div className="storyList" ref={listRef}>
           <Story pic={2} name={"Create Story"} storyWidth={storyWidth} />
           <Story pic={3} name={"Ehab Eissa Ali"} storyWidth={storyWidth} />
-          <Story pic={7} name={"Travis Bennett"} storyWidth={storyWidth} />
+          <Story pic={7} name={"Amr El Askalany"} storyWidth={storyWidth} />
           <Story pic={6} name={"Reham Kassem"} storyWidth={storyWidth} />
-          <Story pic={9} name={"Sarah Smith"} storyWidth={storyWidth} />
+          <Story pic={9} name={"Ossama Hosny"} storyWidth={storyWidth} />
+          <Story pic={1} name={"Essam Mahmoud"} storyWidth={storyWidth} />
           <Story pic={4} name={"Menna Aly"} storyWidth={storyWidth} />
-          <Story pic={5} name={"Sara Aly"} storyWidth={storyWidth} />
-          <Story pic={10} name={"Jane Doe"} storyWidth={storyWidth} />
+          <Story pic={5} name={"Yehia London"} storyWidth={storyWidth} />
+          <Story pic={10} name={"Amal Saleh"} storyWidth={storyWidth} />
           <Story
             pic={8}
             name={"Jennifer Emma Watson"}
             storyWidth={storyWidth}
           />
-          <Story pic={1} name={"Gary Duty"} storyWidth={storyWidth} />
         </div>
         <FaChevronRight
           className="arrow right"

@@ -60,7 +60,7 @@
 .storyImg {
   /* width: 107px; */
   height: 190px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
 }
 

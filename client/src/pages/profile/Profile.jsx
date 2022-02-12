@@ -24,8 +24,8 @@ export default function Profile() {
       <Topbar />
       <div className="profile">
         {/* <Sidebar /> */}
-        <div className="profileRight">
-          <div className="profileRightTop">
+        <div className="profileCenter">
+          <div className="profileCenterTop">
             <div className="profileCover">
               <img
                 className="profileCoverImg"
@@ -36,7 +36,8 @@ export default function Profile() {
                 }
                 alt=""
               />
-
+            </div>
+            <div className="profileUserWarpper">
               <div className="profileUserImgWarpper">
                 <img
                   className="profileUserImg"
@@ -48,15 +49,136 @@ export default function Profile() {
                   alt=""
                 />
               </div>
-            </div>
-            <div className="profileInfo">
-              <span className="profileInfoName">{user.username}</span>
-              <span className="profileInfoDesc">{user.desc}</span>
+              <div className="profileInfo">
+                <span className="profileInfoName">{user.username}</span>
+                <span className="profileInfoDesc">47 Friends</span>
+                {/* <span className="profileInfoDesc">{user.desc}</span> */}
+                <div className="friendsList">
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "12" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/1.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "11" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/3.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "10" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/5.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "9" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/10.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "8" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/9.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "7" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/4.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "6" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/6.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="friendsListImgWarpper"
+                    style={{ zIndex: "5" }}
+                  >
+                    <img
+                      className="friendsListImg"
+                      src={
+                        user.profilePicture
+                          ? PF + "person/8.jpeg"
+                          : PF + "person/noAvatar.png"
+                      }
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="profileRightBottom">
+          <div className="profileCenterBottom">
+            {/* <div className="profileCenterBottomCenter">
+              <div className="profileCenterBottomCenterLeft"> */}
             <Feed username={username} />
+            {/* </div>
+              <div className="profileCenterBottomCenterRight"> */}
             <Rightbar user={user} />
+            {/* </div>
+            </div> */}
           </div>
         </div>
       </div>

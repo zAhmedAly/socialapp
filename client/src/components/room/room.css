@@ -24,6 +24,7 @@
   margin-right: 10px;
   margin-left: 5px;
   border: 1px solid lightgray;
+  cursor: pointer;
 }
 
 .roomInput {
