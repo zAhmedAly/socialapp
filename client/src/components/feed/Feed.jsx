@@ -29,7 +29,7 @@ export default function Feed({ username }) {
     <>
       <div className="feed">
         <div className="feedWrapper">
-          {(!username || username === user.username) && <Stories />}
+          {/* {(!username || username === user.username) && <Stories />} */}
 
           {(!username || username === user.username) && <Share />}
 

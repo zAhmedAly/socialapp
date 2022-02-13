@@ -1,14 +1,14 @@
 .feed {
   flex: 60%;
   height: calc(100vh - 60px);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   top: 60px;
   /* background-color: #ebedf0; */
   background-color: #f5f6f7;
   box-sizing: border-box;
   width: 100%;
 }
-
+/* 
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -17,8 +17,8 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(179, 179, 179);
-}
+} */
 
 .feedWrapper {
-  padding: 20px 100px;
+  padding: 20px 0;
 }

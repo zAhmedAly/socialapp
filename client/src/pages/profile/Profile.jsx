@@ -23,7 +23,6 @@ export default function Profile() {
     <>
       <Topbar />
       <div className="profile">
-        {/* <Sidebar /> */}
         <div className="profileCenter">
           <div className="profileCenterTop">
             <div className="profileCover">
@@ -171,14 +170,10 @@ export default function Profile() {
             </div>
           </div>
           <div className="profileCenterBottom">
-            {/* <div className="profileCenterBottomCenter">
-              <div className="profileCenterBottomCenterLeft"> */}
+            <div className="profileCenterBottomLeft"></div>
+            {/* <div className="profileCenterBottomRight"> */}
             <Feed username={username} />
-            {/* </div>
-              <div className="profileCenterBottomCenterRight"> */}
-            <Rightbar user={user} />
-            {/* </div>
-            </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

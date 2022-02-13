@@ -118,11 +118,16 @@
 
 .profileCenterBottom {
   display: flex;
-  margin: 0 250px;
+  width: 60%;
+  margin: auto;
 }
 
 .profileCenterBottomLeft {
-  flex: 10%;
+  flex: 40%;
+  margin-right: 20px;
+}
+.profileCenterBottomRight {
+  flex: 60%;
 }
 
 .profileCenterBottomCenter {
