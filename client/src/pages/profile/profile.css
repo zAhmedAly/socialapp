@@ -120,14 +120,59 @@
   display: flex;
   width: 60%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .profileCenterBottomLeft {
   flex: 40%;
   margin-right: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  height: max-content;
 }
+
+.profileCenterBottomLeftTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profileCenterBottomLeftJoined {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.profileCenterBottomLeftJoinedIcon {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray !important;
+  margin-right: 10px;
+}
+.profileCenterBottomLeftJoinedDate {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profileCenterBottomLeftButton {
+  display: block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0 0 0;
+  background-color: #e6eaee;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profileCenterBottomLeftButton:hover {
+  background-color: #d3d7db;
+}
+
 .profileCenterBottomRight {
-  flex: 60%;
+  flex: 60% !important;
 }
 
 .profileCenterBottomCenter {

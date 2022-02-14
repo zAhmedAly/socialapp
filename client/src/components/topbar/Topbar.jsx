@@ -96,9 +96,9 @@ export default function Topbar() {
                 className="topbarImg"
               />
             </Link>
-            <span className="topbarImgUsername">
-              {user.username.split(" ")[0]}
-            </span>
+              <span className="topbarImgUsername">
+                {user.username.split(" ")[0]}
+              </span>
           </div>
           <div className="topbarIcons">
             <div className="topbarIconItem">

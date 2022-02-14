@@ -31,9 +31,9 @@ export default function Feed({ username }) {
         <div className="feedWrapper">
           {/* {(!username || username === user.username) && <Stories />} */}
 
-          {(!username || username === user.username) && <Share />}
+          {/* {(!username || username === user.username) && <Share />} */}
 
-          {(!username || username === user.username) && <Room />}
+          {/* {(!username || username === user.username) && <Room />} */}
 
           {posts.map((p) => (
             <Post key={p._id} post={p} />
