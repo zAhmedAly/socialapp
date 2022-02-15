@@ -104,7 +104,7 @@
   object-fit: cover;
 }
 
-.menuItem:hover {
+.menuItem:hover:not(.active) {
   /* background-color: #ebedf0; */
   background-color: #f2f3f5;
   /* background-color: #e6eaee; */
