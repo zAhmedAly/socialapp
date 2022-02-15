@@ -52,157 +52,176 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className="profileUserWarpper">
-              <div className="profileUserImgWarpper">
-                <img
-                  className="profileUserImg"
-                  src={
-                    user.profilePicture
-                      ? PF + user.profilePicture
-                      : PF + "person/noAvatar.png"
-                  }
-                  alt=""
-                />
-                <div className="profileUserImgIconWrapper">
-                  <FaCamera className="profileUserImgIcon" />
-                </div>
-              </div>
-              <div className="profileInfo">
-                <span className="profileInfoName">{user.username}</span>
-                <span className="profileInfoDesc">47 Friends</span>
-                <div className="friendsList">
-                  <div className="friendsListWrapper">
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "12" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/1.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "11" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/3.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "10" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/5.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "9" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/10.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "8" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/9.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "7" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/4.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "6" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/6.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="friendsListImgWarpper"
-                      style={{ zIndex: "5" }}
-                    >
-                      <img
-                        className="friendsListImg"
-                        src={
-                          user.profilePicture
-                            ? PF + "person/8.jpeg"
-                            : PF + "person/noAvatar.png"
-                        }
-                        alt=""
-                      />
-                    </div>
+            <div className="profileUser">
+              <div className="profileUserWarpper">
+                <div className="profileUserImgWarpper">
+                  <img
+                    className="profileUserImg"
+                    src={
+                      user.profilePicture
+                        ? PF + user.profilePicture
+                        : PF + "person/noAvatar.png"
+                    }
+                    alt=""
+                  />
+                  <div className="profileUserImgIconWrapper">
+                    <FaCamera className="profileUserImgIcon" />
                   </div>
-                  <div className="profileInfoButtons">
-                    <div
-                      className="profileInfoButton"
-                      style={{ backgroundColor: "#1877f2", color: "white" }}
-                    >
-                      <FaPlusCircle className="profileInfoButtonIcon" />
-                      Add to story
+                </div>
+                <div className="profileInfo">
+                  <span className="profileInfoName">{user.username}</span>
+                  <span className="profileInfoDesc">47 Friends</span>
+                  <div className="friendsList">
+                    <div className="friendsListWrapper">
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "12" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/1.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "11" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/3.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "10" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/5.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "9" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/10.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "8" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/9.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "7" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/4.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "6" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/6.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="friendsListImgWarpper"
+                        style={{ zIndex: "5" }}
+                      >
+                        <img
+                          className="friendsListImg"
+                          src={
+                            user.profilePicture
+                              ? PF + "person/8.jpeg"
+                              : PF + "person/noAvatar.png"
+                          }
+                          alt=""
+                        />
+                      </div>
                     </div>
-                    <div className="profileInfoButton">
-                      <FaPencilAlt className="profileInfoButtonIcon" />
-                      Edit profile
+                    <div className="profileInfoButtons">
+                      <div
+                        className="profileInfoButton"
+                        style={{ backgroundColor: "#1877f2", color: "white" }}
+                      >
+                        <FaPlusCircle className="profileInfoButtonIcon" />
+                        Add to story
+                      </div>
+                      <div className="profileInfoButton">
+                        <FaPencilAlt className="profileInfoButtonIcon" />
+                        Edit profile
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             {/* Add menu */}
-            <div className="menu">
+            {/* <div className="menu">
+              <div className="menuList">
+                <div className="menuListItem active">Posts</div>
+                <div className="menuListItem ">About</div>
+                <div className="menuListItem ">Friends</div>
+                <div className="menuListItem ">Photos</div>
+                <div className="menuListItem ">Videos</div>
+                <div className="menuListItem ">Check-ins</div>
+                <div className="menuListItem ">More</div>
+              </div>
+              <div className="menuButton">
+                <FaEllipsisH />
+              </div>
+            </div> */}
+          </div>
+          <div className="menu">
+            <div className="menuWrapper">
               <div className="menuList">
                 <div className="menuListItem active">Posts</div>
                 <div className="menuListItem ">About</div>
