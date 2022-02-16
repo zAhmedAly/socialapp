@@ -8,7 +8,7 @@
   min-height: calc(100vh - 60px);
   overflow-y: scroll;
   /* position: sticky; */
-  top: 60px;
+  /* top: 60px; */
 }
 
 .profileCenterTop {
@@ -19,7 +19,7 @@
   position: relative;
 }
 .profileCover {
-  height: 350px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@
 
 .profileCoverWrapper {
   height: 350px;
-  width: 55%;
+  width: 940px;
   position: relative;
 }
 
@@ -77,6 +77,7 @@
   top: 300px;
   width: 100%;
   margin: auto;
+  padding-bottom: 15px;
   /* border-bottom: 1px solid lightgray; */
 }
 .profileUserWarpper {
@@ -84,8 +85,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 52%;
+  width: 908px;
   height: 100%;
+  padding: 0 10px;
 }
 .profileUserImgWarpper {
   width: 170px;
@@ -203,11 +205,12 @@
 
 .menuWrapper {
   height: 50px;
-  width: 52%;
+  width: 908px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
 }
 .menuList {
   display: flex;
@@ -227,7 +230,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgb(133, 133, 133);
+  color: rgb(76, 76, 76);
   /* margin-right: 20px; */
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -261,9 +264,10 @@
 
 .profileCenterBottom {
   display: flex;
-  width: 52%;
+  width: 908px;
   margin: auto;
   margin-top: 15px;
+  padding: 0 10px;
 }
 
 .profileCenterBottomLeft {
