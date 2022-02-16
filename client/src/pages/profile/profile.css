@@ -5,7 +5,7 @@
 
 .profileCenter {
   flex: 80%;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   overflow-y: scroll;
   /* position: sticky; */
   top: 60px;
@@ -13,7 +13,7 @@
 
 .profileCenterTop {
   background: linear-gradient(to bottom, #003366 -25%, #ffffff 50%);
-  width: 100%;
+  /* width: 100%; */
   height: 510px;
   /* border-bottom: 1px solid lightgray; */
   position: relative;
@@ -29,7 +29,7 @@
 
 .profileCoverWrapper {
   height: 350px;
-  width: 68%;
+  width: 55%;
   position: relative;
 }
 
@@ -84,7 +84,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 65%;
+  width: 52%;
+  height: 100%;
 }
 .profileUserImgWarpper {
   width: 170px;
@@ -138,8 +139,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  margin-bottom: 35px;
-  margin-top: 20px;
+  /* margin-bottom: 35px;
+  margin-top: 20px; */
   /* width: 50%; */
 }
 
@@ -190,7 +191,7 @@
 }
 
 .menu {
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,8 +202,8 @@
 }
 
 .menuWrapper {
-  height: 60px;
-  width: 65%;
+  height: 50px;
+  width: 52%;
   position: relative;
   display: flex;
   align-items: center;
@@ -216,17 +217,20 @@
 }
 
 .menuListItem {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
+  transform: scale(1, 1.1);
+  /* font-stretch: ultra-expanded; */
   height: 50px;
   padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgb(88, 88, 88);
+  color: rgb(133, 133, 133);
   /* margin-right: 20px; */
   cursor: pointer;
+  letter-spacing: 0.5px;
 }
 .menuListItem:hover:not(.active) {
   background-color: #f0f0f0;
@@ -257,9 +261,9 @@
 
 .profileCenterBottom {
   display: flex;
-  width: 65%;
+  width: 52%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .profileCenterBottomLeft {
@@ -295,14 +299,16 @@
 
 .profileInfoButtons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  height: 170px;
 }
 .profileInfoButton {
   display: block;
   border: none;
   padding: 10px;
   border-radius: 5px;
-  font-size: 13px;
+  /* font-size: 13px; */
+  font-size: 0.875rem;
   font-weight: 600;
   background-color: #e6eaee;
   text-align: center;
@@ -311,6 +317,8 @@
   align-items: center;
   /* color: rgb(97, 97, 97); */
   margin-left: 10px;
+  word-wrap: break-word;
+  height: 36px;
 }
 
 .profileInfoButton:hover {
