@@ -11,11 +11,13 @@ import {
 } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import Topbar from "./components/topbar/Topbar";
 
 function App() {
   const { user } = useContext(AuthContext);
   return (
     <Router>
+      <Topbar />
       <Switch>
         <Route exact path="/">
           {user ? <Home /> : <Login />}

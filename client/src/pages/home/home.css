@@ -5,6 +5,10 @@
   flex-wrap: wrap;
 }
 
+.homeContainerWrapper {
+  flex: 100%;
+}
+
 .homeCenter {
   display: flex;
   flex-direction: column;

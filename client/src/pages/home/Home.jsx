@@ -10,7 +10,7 @@ import Room from "../../components/room/Room";
 export default function Home() {
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <div className="homeContainer">
         <Sidebar />
         <div className="homeCenter">
