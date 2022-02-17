@@ -80,13 +80,14 @@
   /* background-color: lightblue; */
   box-sizing: border-box;
   padding: 0 50px;
+  height: 100%;
 }
 
 .topbarCenterMenuWapper {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* padding: 0 150px; */
+  height: 100%;
 }
 
 .menuItem {

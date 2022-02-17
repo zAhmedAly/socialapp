@@ -77,7 +77,7 @@
   top: 300px;
   width: 100%;
   margin: auto;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
   /* border-bottom: 1px solid lightgray; */
 }
 .profileUserWarpper {
@@ -90,8 +90,8 @@
   padding: 0 10px;
 }
 .profileUserImgWarpper {
-  width: 170px;
-  height: 170px;
+  width: 174px;
+  height: 174px;
   border-radius: 50%;
   background-color: white;
   display: flex;
@@ -102,8 +102,8 @@
   position: relative;
 }
 .profileUserImg {
-  width: 165px;
-  height: 165px;
+  width: 169px;
+  height: 169px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid lightgray;
@@ -119,7 +119,7 @@
   height: 35px;
   border-radius: 50%;
   cursor: pointer;
-  bottom: 10px;
+  bottom: 20px;
   right: 5px;
   background-color: #e6eaee;
 }
@@ -141,24 +141,24 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  /* margin-bottom: 35px;
-  margin-top: 20px; */
-  /* width: 50%; */
+  width: 50%;
+  margin-bottom: 32px;
 }
 
 .profileInfoName {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 5px;
+  line-height: 1.1875;
 }
 
 .profileInfoDesc {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.1765;
   color: gray;
-  transform: scale(1, 1.1);
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
+  /* transform: scale(1, 0.8); */
+  /* letter-spacing: 0.5px; */
+  padding-top: 5px;
 }
 
 .friendsList {
@@ -166,6 +166,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding-top: 5px;
 }
 
 .friendsListWrapper {
@@ -173,8 +174,8 @@
   align-items: center;
 }
 .friendsListImgWarpper {
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,12 +185,15 @@
   /* border: 1px solid lightgray; */
 }
 .friendsListImg {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -197,6 +201,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: 100%; */
   width: 100%;
   margin: auto;
   background-color: white;
@@ -204,7 +209,7 @@
 }
 
 .menuWrapper {
-  height: 50px;
+  height: 60px;
   width: 908px;
   position: relative;
   display: flex;
@@ -305,6 +310,7 @@
   display: flex;
   align-items: flex-end;
   height: 170px;
+  margin-bottom: 32px;
 }
 .profileInfoButton {
   display: block;
@@ -312,8 +318,9 @@
   padding: 10px;
   border-radius: 5px;
   /* font-size: 13px; */
-  font-size: 0.875rem;
+  font-size: 13px;
   font-weight: 600;
+  line-height: 1.3333;
   background-color: #e6eaee;
   text-align: center;
   cursor: pointer;
