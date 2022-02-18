@@ -1,12 +1,9 @@
 .sidebar {
-  flex: 20%;
+  flex: 4;
   height: calc(100vh - 60px);
   overflow-y: scroll;
-  position: sticky;
-  top: 60px;
-  /* background-color: #ebedf0; */
   background-color: #f5f6f7;
-  box-sizing: border-box;
+  background-color: aquamarine;
 }
 
 ::-webkit-scrollbar {

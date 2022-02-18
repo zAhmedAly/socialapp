@@ -12,17 +12,15 @@
 }
 
 .topbarLeft {
-  flex: 25%;
-  /* display: flex;
-  align-items: center; */
+  flex: 4;
   height: 100%;
-  /* background-color: greenyellow; */
-  /* box-sizing: border-box; */
+  background-color: aquamarine;
 }
 
 .topbarLeftWapper {
   display: flex;
   align-items: center;
+  /* justify-content: space-evenly; */
   height: 100%;
 }
 
@@ -30,9 +28,8 @@
   /* font-size: 40px !important; */
   width: 45px;
   height: 45px;
-  margin-left: 10px;
-  margin-right: 5px;
   color: #1877f2 !important;
+  margin: 0 10px;
 }
 
 .logo {
@@ -44,7 +41,9 @@
 }
 
 .searchbar {
-  width: 70%;
+  /* max-width: min-content; */
+  width: 80%;
+  max-width: 320px;
   height: 45px;
   /* background-color: #ebedf0; */
   background-color: #f2f3f5;
@@ -64,11 +63,13 @@
 .searchInput {
   border: none;
   width: 80%;
+  height: 100%;
   /* background-color: #ebedf0; */
   background-color: #f2f3f5;
   padding: 0 5px;
   font-size: 12px;
   font-weight: 500;
+  display: inline-block;
 }
 
 .searchInput:focus {
@@ -76,11 +77,12 @@
 }
 
 .topbarCenter {
-  flex: 50%;
+  flex: 8;
   /* background-color: lightblue; */
   box-sizing: border-box;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   height: 100%;
+  background-color: bisque;
 }
 
 .topbarCenterMenuWapper {
@@ -88,6 +90,8 @@
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .menuItem {
@@ -123,7 +127,7 @@
 }
 
 .topbarRight {
-  flex: 25%;
+  flex: 4;
   /* display: flex;
   align-items: center;
   justify-content: flex-end; */
@@ -131,6 +135,7 @@
   /* padding: 0 10px; */
   /* background-color: lightpink; */
   height: 100%;
+  background-color: yellowgreen;
 }
 
 .topbarRightWapper {

@@ -1,12 +1,9 @@
 .rightbar {
-  flex: 20%;
+  flex: 4;
   height: calc(100vh - 60px);
   overflow-y: scroll;
-  position: sticky;
-  /* background-color: #ebedf0; */
   background-color: #f5f6f7;
-  top: 60px;
-  box-sizing: border-box;
+  background-color: yellowgreen;
 }
 
 ::-webkit-scrollbar {

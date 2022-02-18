@@ -1,5 +1,5 @@
 .feed {
-  flex: 60%;
+  flex: 50%;
   height: calc(100vh - 60px);
   /* overflow-y: scroll; */
   top: 60px;
