@@ -239,32 +239,36 @@ export default function Profile() {
             </div>
           </div>
           <div className="profileCenterBottom">
-            <div className="profileCenterBottomLeft">
-              <div className="profileCenterBottomLeftTitle">
-                <span>Intro</span>
-              </div>
-              <div className="profileCenterBottomLeftButton">Add Bio</div>
-              <div className="profileCenterBottomLeftJoined">
-                <FaVolumeUp className="profileCenterBottomLeftJoinedIcon" />
-                <div className="profileCenterBottomLeftJoinedDate">
-                  Pronounces name AH-MED A-lee
+            <div className="profileCenterBottomWrapper">
+              <div className="profileCenterBottomLeft">
+                <div className="profileCenterBottomLeftTitle">
+                  <span>Intro</span>
                 </div>
-              </div>
-              <div className="profileCenterBottomLeftJoined">
-                <FaClock className="profileCenterBottomLeftJoinedIcon" />
-                <div className="profileCenterBottomLeftJoinedDate">
-                  <span>
-                    Joined {moment(user.createdAt).format("MMMM YYYY")}
-                  </span>
+                <div className="profileCenterBottomLeftButton">Add Bio</div>
+                <div className="profileCenterBottomLeftJoined">
+                  <FaVolumeUp className="profileCenterBottomLeftJoinedIcon" />
+                  <div className="profileCenterBottomLeftJoinedDate">
+                    Pronounces name AH-MED A-lee
+                  </div>
                 </div>
+                <div className="profileCenterBottomLeftJoined">
+                  <FaClock className="profileCenterBottomLeftJoinedIcon" />
+                  <div className="profileCenterBottomLeftJoinedDate">
+                    <span>
+                      Joined {moment(user.createdAt).format("MMMM YYYY")}
+                    </span>
+                  </div>
+                </div>
+                <div className="profileCenterBottomLeftButton">
+                  Edit Details
+                </div>
+                <div className="profileCenterBottomLeftButton">Add Hobbies</div>
+                <div className="profileCenterBottomLeftButton">Add Featued</div>
               </div>
-              <div className="profileCenterBottomLeftButton">Edit Details</div>
-              <div className="profileCenterBottomLeftButton">Add Hobbies</div>
-              <div className="profileCenterBottomLeftButton">Add Featued</div>
-            </div>
-            <div className="profileCenterBottomRight">
-              <Share />
-              <Feed username={username} />
+              <div className="profileCenterBottomRight">
+                <Share />
+                <Feed username={username} />
+              </div>
             </div>
           </div>
         </div>

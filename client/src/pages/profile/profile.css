@@ -1,6 +1,8 @@
 .profile {
   display: flex;
   background-color: #ebedf0;
+  width: 100%;
+  margin: auto;
 }
 
 .profileCenter {
@@ -41,6 +43,7 @@
 }
 
 .profileCoverButton {
+  display: inline-block;
   position: absolute;
   border: none;
   padding: 10px;
@@ -268,6 +271,14 @@
 }
 
 .profileCenterBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.profileCenterBottomWrapper {
   display: flex;
   width: 908px;
   margin: auto;
