@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #ebedf0;
   margin: auto;
+  justify-content: center;
 }
 
 .homeContainerWrapper {
@@ -14,11 +15,12 @@
   height: calc(100vh - 60px);
   overflow-y: scroll;
   background-color: #f5f6f7;
-  background-color: bisque;
+  /* background-color: bisque; */
+  max-width: 821px;
 }
 
 .homeCenterWrapper {
-  padding: 20px 100px;
+  padding: 20px 20px;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -28,4 +30,10 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(179, 179, 179);
+}
+
+@media only screen and (min-width: 1181px) {
+  .homeCenterWrapper {
+    padding: 20px 100px;
+  }
 }

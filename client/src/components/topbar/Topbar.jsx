@@ -59,7 +59,7 @@ export default function Topbar() {
               src="https://img.icons8.com/windows/96/000000/tv-show.png"
             /> */}
           </div>
-          <div className="menuItem">
+          <div className="menuItem active">
             <FaDiceD6 className="menuItemIcon" />
             {/* <img
               alt="Gaming"

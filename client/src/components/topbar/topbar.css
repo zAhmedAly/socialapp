@@ -1,7 +1,6 @@
 .topbarContainer {
   height: 60px;
   width: 100%;
-  /* background-color: #1877f2; */
   display: flex;
   align-items: center;
   position: sticky;
@@ -14,14 +13,16 @@
 .topbarLeft {
   flex: 4;
   height: 100%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  max-width: 25%;
 }
 
 .topbarLeftWapper {
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
   height: 100%;
+  width: 90%;
+  overflow: hidden;
 }
 
 .logoIcon {
@@ -42,7 +43,7 @@
 
 .searchbar {
   /* max-width: min-content; */
-  width: 80%;
+  width: 90%;
   max-width: 320px;
   height: 45px;
   /* background-color: #ebedf0; */
@@ -50,7 +51,8 @@
   border-radius: 30px;
   display: flex;
   align-items: center;
-  overflow: auto;
+  justify-content: space-evenly;
+  /* background-color: green; */
 }
 
 .searchIcon {
@@ -63,13 +65,11 @@
 .searchInput {
   border: none;
   width: 80%;
-  height: 100%;
   /* background-color: #ebedf0; */
   background-color: #f2f3f5;
   padding: 0 5px;
   font-size: 12px;
   font-weight: 500;
-  display: inline-block;
 }
 
 .searchInput:focus {
@@ -78,11 +78,9 @@
 
 .topbarCenter {
   flex: 8;
-  /* background-color: lightblue; */
-  box-sizing: border-box;
-  /* padding: 0 50px; */
   height: 100%;
-  background-color: bisque;
+  /* background-color: bisque; */
+  max-width: 50%;
 }
 
 .topbarCenterMenuWapper {
@@ -128,14 +126,12 @@
 
 .topbarRight {
   flex: 4;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-end; */
   color: white;
-  /* padding: 0 10px; */
-  /* background-color: lightpink; */
   height: 100%;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+  max-width: 25%;
+  min-width: 25%;
+  overflow: auto;
 }
 
 .topbarRightWapper {

@@ -3,7 +3,8 @@
   height: calc(100vh - 60px);
   overflow-y: scroll;
   background-color: #f5f6f7;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+  max-width: 411px;
 }
 
 ::-webkit-scrollbar {
