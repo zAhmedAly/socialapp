@@ -1,8 +1,6 @@
 import "./profile.css";
-import Topbar from "../../components/topbar/Topbar";
 import Feed from "../../components/feed/Feed";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import moment from "moment";
 import {
   FaClock,
@@ -15,6 +13,7 @@ import {
 
 import { useParams } from "react-router";
 import Share from "../../components/share/Share";
+import { axiosInstance } from "../../config";
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -23,7 +22,7 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?username=${username}`);
+      const res = await axiosInstance.get(`/users?username=${username}`);
       setUser(res.data);
     };
     fetchUser();

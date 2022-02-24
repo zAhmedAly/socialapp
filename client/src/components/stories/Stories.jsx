@@ -9,56 +9,57 @@ const Stories = () => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [storyWidth, setStoryWidth] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  // const [height, setHeight] = useState(window.innerHeight);
   const [arrowClicked, SetArrowClicked] = useState("");
 
   const listRef = useRef();
 
   const updateWidthAndHeight = () => {
     setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
+    // setHeight(window.innerHeight);
   };
 
   useEffect(() => {
     window.addEventListener("resize", updateWidthAndHeight);
-    console.log(">>>> listRef width >>>> ", listRef.current.offsetWidth);
+    // console.log(">>>> listRef width >>>> ", listRef.current.offsetWidth);
     const ratio = Math.floor(listRef.current.offsetWidth / 107);
     const tempWidth = Math.floor(listRef.current.offsetWidth / ratio);
     setStoryWidth(tempWidth);
-    console.log(
-      `TEMP WIDTH = ${tempWidth} >>>> setStoryWidth >>>> ${storyWidth} && ratio >>> ${ratio}`
-    );
+    // console.log(
+    //   `TEMP WIDTH = ${tempWidth} >>>> setStoryWidth >>>> ${storyWidth} && ratio >>> ${ratio}`
+    // );
     return () => window.removeEventListener("resize", updateWidthAndHeight);
   }, [width]);
 
   useEffect(() => {
     const ratio = Math.floor(listRef.current.offsetWidth / 107);
     const storyList = document.querySelector(".storyList");
-    console.log("useEffect arrowClicked >>> ", arrowClicked);
+    // console.log("useEffect arrowClicked >>> ", arrowClicked);
     if (arrowClicked === "left" && slideNumber >= 0) {
       listRef.current.style.transform = `translateX(${Math.floor(
         storyList.computedStyleMap().get("transform")[0].x.value + storyWidth
       )}px)`;
-      console.log(
-        `LEFT useEffect translateX >>> storyWidth = ${storyWidth} &&  ${Math.floor(
-          storyList.computedStyleMap().get("transform")[0].x.value
-        )} + ${storyWidth} = ${Math.floor(
-          storyList.computedStyleMap().get("transform")[0].x.value + storyWidth
-        )}`
-      );
+      // console.log(
+      //   `LEFT useEffect translateX >>> storyWidth = ${storyWidth} &&  ${Math.floor(
+      //     storyList.computedStyleMap().get("transform")[0].x.value
+      //   )} + ${storyWidth} = ${Math.floor(
+      //     storyList.computedStyleMap().get("transform")[0].x.value + storyWidth
+      //   )}`
+      // );
     } else if (arrowClicked === "right" && slideNumber <= 10 - ratio) {
       listRef.current.style.transform = `translateX(${Math.floor(
         storyList.computedStyleMap().get("transform")[0].x.value - storyWidth
       )}px)`;
-      console.log(
-        `RIGHT useEffect translateX >>> storyWidth = ${storyWidth} &&  ${Math.floor(
-          storyList.computedStyleMap().get("transform")[0].x.value
-        )} - ${storyWidth} = ${Math.floor(
-          storyList.computedStyleMap().get("transform")[0].x.value - storyWidth
-        )}`
-      );
+      // console.log(
+      //   `RIGHT useEffect translateX >>> storyWidth = ${storyWidth} &&  ${Math.floor(
+      //     storyList.computedStyleMap().get("transform")[0].x.value
+      //   )} - ${storyWidth} = ${Math.floor(
+      //     storyList.computedStyleMap().get("transform")[0].x.value - storyWidth
+      //   )}`
+      // );
     }
-    console.log("useEffect slideNumber >>> ", slideNumber);
+    // console.log("useEffect slideNumber >>> ", slideNumber);
+    // eslint-disable-next-line
   }, [slideNumber, arrowClicked]);
 
   const handleClick = (direction) => {
